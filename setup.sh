@@ -12,10 +12,12 @@ if [ "x$AFTER_REBOOT" = "xyes" ]; then
 
     pip install gdown
     gdown --no-check-certificate --folder https://drive.google.com/drive/folders/1Okeb6I7bt7RRQ9zC_9fSC1_kkjrGNaNN
-    mv ./wav2lip-fork/s3fd.pth ./face_detection/detection/sfd/
-    mv ./wav2lip-fork/wav2lip.pth .
-    mv ./wav2lip-fork/wav2lip_gan.pth .
-    rm -r wav2lip-fork/
+    mv ./wav2lip/s3fd.pth ./face_detection/detection/sfd/
+    mv ./wav2lip/wav2lip.pth .
+    mv ./wav2lip/wav2lip_gan.pth .
+    mv ./wav2lip/visual_quality_disc.pth .
+    mv ./wav2lip/lipsync_expert.pth .
+    rm -r wav2lip/
 
 else
 
